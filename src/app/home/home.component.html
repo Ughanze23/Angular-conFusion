@@ -33,4 +33,20 @@ fxLayoutGap="10px">
 </md-card-content>
 </md-card>
 
+<md-card *ngFor="let lead of fleader" fxFlex>
+        <md-card-header>
+        <div md-card-avatar></div>
+        <md-card-title>
+         <h3>{{lead.name | uppercase}}</h3>
+        </md-card-title>
+        </md-card-header>
+        <img md-card-image src={{lead.image}} alt={{lead.name}}>
+        <md-card-content>
+            <p>
+                {{lead.designation}}
+            </p>
+        <p>{{lead.description}}
+        </p>
+        </md-card-content>
+        </md-card>
 </div>
